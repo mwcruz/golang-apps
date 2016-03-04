@@ -8,7 +8,6 @@ package main
 //    Using closures
 
 import (
-	"errors"
 	"html/template"
 	"io/ioutil"
 	"net/http"
@@ -38,7 +37,8 @@ var validPath = regexp.MustCompile("^/(edit|view|save)/([a-zA-Z0-9]+)$")
 
 //Crete a function that uses the validPath expression
 // to validate path and extract the page title:
-func getTitle(w http.ResponseWriter, r *http.Request) (string, error) {
+
+/*func getTitle(w http.ResponseWriter, r *http.Request) (string, error) {
 	//calling validPath.FindStringSubmatch(r.URL.Path) will return
 	//a slice identifying the successive submatches of the expression
 	//validPath. Submatch 0 is the entire expression, submatch 1 is the
@@ -49,7 +49,7 @@ func getTitle(w http.ResponseWriter, r *http.Request) (string, error) {
 		return "", errors.New("Invalid Page Title")
 	}
 	return m[2], nil // returns submatch group 2 which is the title
-}
+}*/
 
 //creating a struct to hold the data structure
 type Page struct {
@@ -82,7 +82,7 @@ func loadPage(title string) (*Page, error) {
 //Create a function to render templates
 func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 	//ExecuteTemplate applies the template associated with the receiver,
-	//in this case a template that has the name value of tmpl
+	//in this case a template, that has the name value of tmpl
 	//to the specified data object p and writes the output to w
 	//if an error occurs, execution stops
 	err := templates.ExecuteTemplate(w, tmpl+".html", p)
@@ -93,29 +93,45 @@ func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 
 }
 
-//Create a function viewHandler of type http.HandlerFunc
-//http.HandlerFunc take two arguments: http.ResponseWriter and a pointer to http.Request
-//viewHandler will allow users to view wiki pages. It will hadle URL prefixed with "/view/"
+//Catching the error condition in each handler introduces a lot of repeated code.
+//Let's wrap each of the handlers in a function that does this validation and error checking.The wrapper function will take a function of the viewHandler type, and return a function of type http.HandlerFunc
+//(suitable to be passed to the function http.HandleFunc):
 
-func viewHandler(w http.ResponseWriter, r *http.Request) {
-	title, err := getTitle(w, r)
-	if err != nil {
-		return
+func makeHandler(fn func(w http.ResponseWriter, r *http.Request, title string)) http.HandlerFunc {
+	//return a function that uses the validPath expression
+	//to validate path and extract the page title
+	return func(w http.ResponseWriter, r *http.Request) {
+		m := validPath.FindStringSubmatch(r.URL.Path)
+		if m == nil {
+			http.NotFound(w, r)
+			return
+		}
+		//it returns fn(w, r, m[2]). It is called a closure,
+		//because it uses variables defined outside of it
+		fn(w, r, m[2]) // m[2] is for submatch group 2: title.
 	}
+}
+
+//Modify the handler functions to match the argument of the makeHandler
+//wrapper function. Add a title argument of type string.
+//The goal is to DRY the code that catches the error condition,
+//which is repeated in every handler. Since we have a makeHandler func
+//it is safe to remove the error catching condition from the handlers.
+//There is no need for a getTitle function.
+//Create a function viewHandler of type http.HandlerFunc with 3 arguments
+//title string in addition to the two arguments: http.ResponseWriter and a pointer to http.Request
+//viewHandler will allow users to view wiki pages. It will handle URL prefixed with "/view/"
+
+func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
 	p, err := loadPage(title)
 	if err != nil {
-		//redirect with func Redirect(w ResponseWriter, r *Request, urlStr string, code int)
 		http.Redirect(w, r, "/edit/"+title, http.StatusFound)
 	}
 	renderTemplate(w, "view", p)
 }
 
-//Create handlers for edit and save to allow for editing and saving wiki pages
-func editHandler(w http.ResponseWriter, r *http.Request) {
-	title, err := getTitle(w, r)
-	if err != nil {
-		return
-	}
+//make the same modification as applied to viewHandler.
+func editHandler(w http.ResponseWriter, r *http.Request, title string) {
 	p, err := loadPage(title)
 	if err != nil {
 		p = &Page{Title: title}
@@ -123,20 +139,14 @@ func editHandler(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "edit", p)
 }
 
-//The function saveHandler will handle the submission
-// of forms located on the edit pages.
-func saveHandler(w http.ResponseWriter, r *http.Request) {
-	title, err := getTitle(w, r)
-	if err != nil {
-		return
-	}
+func saveHandler(w http.ResponseWriter, r *http.Request, title string) {
 	body := r.FormValue("body")
 	//The value returned by FormValue is of type string.
 	// We must convert that value to []byte
 	//before it will fit into the Page struct.
 	// We use []byte(body) to perform the conversion.
 	p := &Page{Title: title, Body: []byte(body)}
-	err = p.save()
+	err := p.save()
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
@@ -144,10 +154,11 @@ func saveHandler(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "/view/"+title, http.StatusFound)
 }
 
-//write a main function to initialize http using the viewHandler to handle any requests under the path /view/
+//wrap the handler functions with makeHandler in main, before they are registered with the http package:
 func main() {
-	http.HandleFunc("/view/", viewHandler)
-	http.HandleFunc("/edit/", editHandler)
-	http.HandleFunc("/save/", saveHandler)
+	http.HandleFunc("/view/", makeHandler(viewHandler))
+	http.HandleFunc("/edit/", makeHandler(editHandler))
+	http.HandleFunc("/save/", makeHandler(saveHandler))
+
 	http.ListenAndServe(":8080", nil)
 }
