@@ -1,2 +1,2 @@
 # golang-apps
-A brief colelction of computer programs written in GO
+A brief collection of computer programs written in GO

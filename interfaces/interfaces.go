@@ -1,4 +1,4 @@
-/*An interface type is defines as a set of method signatures
+/*An interface type is defined as a set of method signatures
 */
 
 package main

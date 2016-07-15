@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<TITLE>Navega Wireless - Navega Wireless</TITLE>
+<META NAME="Description" CONTENT="Navega Wireless is enabling secure, reliable, cost effective mobile broadband communications for individuals and organizations in mature and emerging markets by offering products and services that deliver IP based mobile broadband voice, data, and video.">
+<META NAME="Keywords" CONTENT="WiMAX, 802.16e, LTE, McWill, CS-OFDMA, wireless broadband, Wi-Fi, Microwave Backhaul, IP Video, IP Camera, IP Convergence, Collaboration, video conference, mobile workforce, mobile broadband">
+<META NAME="Robots" CONTENT="index,follow">
+<META NAME="Revisit-after" CONTENT="30">
+
+<link type="text/css" rel="stylesheet" href="pcHeaderFooter.css" />
+<link type="text/css" rel="stylesheet" href="pcStorefront.css" />
+<!--INCLUDE JQUERY - START -->
+
+<link type="text/css" href="../includes/jquery/themes/redmond/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+
+	<link type="text/css" rel="stylesheet" href="onepagecheckout.css" />
+
+<script type="text/javascript" src="../includes/jquery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../includes/jquery/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="../includes/jquery/jquery.validate.min.OPC.js"></script>
+<script type="text/javascript" src="../includes/jquery/jquery.bgiframe.pack.js"></script>
+<script type="text/javascript" src="../includes/jquery/jquery.form.js"></script>
+<!--INCLUDE JQUERY - END -->
+<meta name="sitelock-site-verification" content="7216" />
+</head>
+<body>
+<table width="1102" id="pcHeader">
+  <!--DWLayoutTable-->
+	<tr>
+		<td width="133" rowspan="3" valign="top"><a href="/"><img src="/store/pc/catalog/NWLogo-000066bkgrd.jpg" alt="" name="StoreLogo" width="134" height="81" border="0"></a></td>
+	  <td width="840" height="23">&nbsp;</td>
+      <td width="178" rowspan="5">
+		  <div id="pcStoreSearch">
+			  <!-- Start Search Box -->
+			  
+<form action="showsearchresults.asp" name="search" method="get" onSubmit="pcf_CheckSearchBox();" class="pcForms">
+	<input type="hidden" name="pageStyle" value="H">
+	<input type="hidden" name="resultCnt" value="10">
+	<input type="Text" name="keyword" size="14" value="" id="smallsearchbox" >
+	<input type="submit" name="submit" value="Go &gt;&gt;" id="submit">
+	<div class="pcSmallText">
+		<a href="search.asp">More search options</a>
+	</div>
+</form>
+<script language="JavaScript">
+<!--
+function pcf_CheckSearchBox() {
+ 	pcv_strTextBox = document.getElementById("smallsearchbox").value;
+	if (pcv_strTextBox != "") {
+		document.getElementById('small_search').onclick();
+	}
+}
+//-->
+</script>
+<link href='screen.css' rel='stylesheet' type='text/css' />
+<script type='text/javascript' src='../includes/javascripts/highslide.html.packed.js'></script>
+<a href="javascript:;" id="small_search" onclick="return hs.htmlExpand(this, { contentId: 'modal_small_search', align: 'center', width: 200 } )" class="highslide"></a>
+<div id='modal_small_search' class="highslide-maincontent">
+		<div align='center'>Searching... Please Wait.</div>
+</div>
+<!-- End: Modal Window - small_search -->
+<!-- Start: Modal Functions - small_search -->
+<script language="JavaScript">
+<!--
+function pcf_Close_small_search() { var t=setTimeout("hs.close('small_search')",50) }
+function pcf_Open_small_search() { document.getElementById('small_search').onclick() }
+//-->
+</script>
+<!-- End: Modal Functions - small_search -->
+
+			  <!-- End Search Box -->
+	  </div>		</td>
+      <td width="129" rowspan="5"><!--DWLayoutEmptyCell-->&nbsp;</td>
+	</tr>
+	<tr>
+	  <td height="20" valign="top">enabler of mobile personal broadband communication </td>
+  </tr>
+	<tr>
+	  <td height="34">&nbsp;</td>
+  </tr>
+	
+	
+	<tr>
+	  <td height="20"></td>
+      <td valign="top">
+		  <div id="pcTopNav">
+			  <ul>
+					
+				  <li><a href="viewCategories.asp">products & services</a></li>
+				  <li><a href="custPref.asp">support</a></li>
+				  <li><a href="search.asp">search</a></li>
+				  <li><a href="checkout.asp">checkout</a></li>
+				  <li><a href="custPref.asp">my account</a></li>
+			  </ul>
+          </div></td>
+    <tr>
+      <td height="14"></td>
+      <td></td>
+</table>
+
+<table id="pcMainArea">
+	<tr>
+		<td id="pcLeft">		
+		<!-- START Category Links -->
+		<div id="pcLeftCatLinks">
+			<h3><a href="viewCategories.asp">Solutions:</a></h3>
+			<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr><td valign="top"><img align="absmiddle" name="IMGCAT52" border="0" src="images/btn_expand.gif" onclick="javascript:UpDown(52);"></td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=52">Mobile Computing</a>
+<table border="0" width="100%" cellpadding="0" cellspacing="0" id="SUB52" style="display:none">
+<tr><td valign="top">&nbsp;</td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=54">Smartphones</a>
+</td></tr>
+<tr><td valign="top">&nbsp;</td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=40">Tablets</a>
+</td></tr>
+<tr><td valign="top">&nbsp;</td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=39">Notebook and Laptops</a>
+</td></tr>
+<tr><td valign="top">&nbsp;</td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=51">Parts and Accessories</a>
+</td></tr>
+</table>
+</td></tr>
+<tr><td valign="top"><img align="absmiddle" name="IMGCAT3" border="0" src="images/btn_expand.gif" onclick="javascript:UpDown(3);"></td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=3">Fixed Wireless Broadba...</a>
+<table border="0" width="100%" cellpadding="0" cellspacing="0" id="SUB3" style="display:none">
+<tr><td valign="top">&nbsp;</td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=50">Broadband Access</a>
+</td></tr>
+<tr><td valign="top">&nbsp;</td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=48">Microwave Radio</a>
+</td></tr>
+<tr><td valign="top">&nbsp;</td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=47">Antenna</a>
+</td></tr>
+<tr><td valign="top">&nbsp;</td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=53">Cables and Accessories</a>
+</td></tr>
+</table>
+</td></tr>
+<tr><td valign="top">&nbsp;</td><td width="100%" valign="top" class="">&nbsp;<a href="http://www.navegawireless.com/store/pc/viewCategories.asp?idCategory=8">Services</a>
+</td></tr>
+</table>
+<script>
+var imgopen = new Image();
+imgopen.src = "images/btn_collapse.gif";
+var imageclose = new Image();
+imageclose.src = "images/btn_expand.gif";
+
+function UpDown(tabid)
+{
+	try
+	{
+		var etab=document.getElementById('SUB' + tabid);
+		if (etab.style.display=='')
+		{
+			etab.style.display='none';
+			var etab=document.images['IMGCAT' + tabid];
+			etab.src=imageclose.src;
+		}
+		else
+		{	
+			etab.style.display='';
+			var etab=document.images['IMGCAT' + tabid];
+			etab.src=imgopen.src;
+		}
+	}
+	catch(err)
+	{
+		return(false);
+	}
+	
+	
+}
+
+
+</script>
+
+		  </div>
+			<!-- END Category Links -->
+			
+			<!-- START price links -->
+			
+			<!-- END price links -->
+
+			<!-- START store links -->
+			<div id="pcLeftStoreLinks">
+				<h3> </h3>
+				<ul>
+					
+					
+                    <li><a href="viewcontent.asp?idpage=4">Welcome</a></li>
+                    
+                    <li><a href="viewcontent.asp?idpage=7">Contact Us</a></li>
+                    
+                    <li><a href="viewcontent.asp?idpage=6">Company Profile</a></li>
+                    
+                    <li><a href="viewcategories.asp">Products & Services</a></li>
+					
+							<li><a href="viewbrands.asp">Brands</a></li>
+					<li><a href="home.asp">Featured Products</a></li>
+					<li><a href="showspecials.asp">Specials</a></li>
+					<li><a href="shownewarrivals.asp">New Arrivals</a></li>
+					<li><a href="showbestsellers.asp">Best Sellers</a></li>
+					<li><a href="search.asp">Advanced Search</a></li>
+					<li><a href="viewcart.asp">View Cart</a></li>
+					<li><a href="http://www.navegawireless.com/storemap.html">Site Map</a></li>
+			    </ul>
+		        <p>&nbsp;</p>
+				
+			</div>
+			
+			<!-- END store links -->
+		</td>		
+		<td class="pcColumnSpacer"></td>
+		<td id="pcCenter">
+
+<div id="pcMain">
+	<table class="pcMainTable">
+		<tr>
+			<td> 
+			<p>&nbsp;</p>
+			<div class="pcErrorMessage">
+
+			We are updating our online Store for your convenience.<BR>Thank you for your patience. Please return soon.<BR><BR>Estamos procedendo a actualizacao do nosso &quot;&quot;Online Store&quot;&quot; para a sua conveniencia. Obrigado pela sua paciencia. Por gentileza regresse pronto.
+			 </div>
+			 <p>&nbsp;</p>
+			</td>
+		</tr>
+	</table>
+</div>
+		</td>
+		<td class="pcColumnSpacer"></td>
+		<td id="pcRight">
+		
+				<!-- START small shopping cart -->
+				
+				<!-- END small shopping cart -->
+				
+				<!-- START small Recent Products -->
+				
+				<!-- END small Recent Products -->
+				
+				<!-- START Logins -->
+				<div id="pcCustomerLogin">
+					<h3>Customer Account:</h3>
+						<ul>
+							 
+								<li><a href="custPref.asp">Register/Login</a></li>
+							
+						</ul>
+					</div>
+					
+					
+		</td>
+	</tr>
+	<tr>
+		<td id="pcFooterSpacer" colspan="5"></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+		  <div id="pcFooter">
+				<ul>
+				  <img src="../pc/circle_master2a.gif" alt="SSL certificate" width="80" height="72" />
+			  </ul>
+		    Navega Wireless</div>
+		</td>
+		<td colspan="2">
+		<div id="sitelock_shield_logo" class="fixed_btm" style="bottom:0;position:fixed;_position:absolute;left:0;"><span class="fixed_btm" style="bottom:0;position:fixed;_position:absolute;left:0;"><span class="fixed_btm" style="bottom:0;position:fixed;_position:absolute;center:0;"><a href="https://www.sitelock.com/verify.php?site=navegawireless.com" onclick="window.open('https://www.sitelock.com/verify.php?site=navegawireless.com','SiteLock','width=600,height=600,left=160,top=170');return false;" ><img src="//shield.sitelock.com/shield/navegawireless.com" alt="PCI Compliance and Malware Removal" align="left" title="SiteLock" /></a></span></span></div>
+		</td>
+	</tr>
+</table>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18918668-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18918668-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 
+
+'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 
+
+'https://ssl' : 'http://www') + '.google-
+
+analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; 
+
+s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<form style="display:none;" method="post" name="gcaform">
+<input type="hidden" id="analyticsdata" name="analyticsdata" value="">
+</form>
+<script type="text/javascript"> 
+function setGoogleCheckout() {	
+	_gaq.push(function() {var pageTracker = _gaq._getAsyncTracker(); setUrchinInputCode(pageTracker);});	
+	var strUrl = "";	
+	document.gcaform.action = strUrl;
+	document.gcaform.submit();
+} 
+</script> 
+<script src="https://checkout.google.com/files/digital/ga_post.js" type="text/javascript"></script>
+
+</body>
+</html>

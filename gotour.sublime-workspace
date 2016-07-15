@@ -1,0 +1,260 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"err",
+				"error"
+			],
+			[
+				"str",
+				"strings"
+			],
+			[
+				"New",
+				"new"
+			],
+			[
+				"Err",
+				"ErrNegativeSqrt"
+			],
+			[
+				"E",
+				"ErrNegativeSqrt"
+			],
+			[
+				"m",
+				"math"
+			],
+			[
+				"f",
+				"f"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Golang Build/Go.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					""
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Install"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Cross-Compile (Interactive)"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Golang Build/Go.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 324.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 428.0
+	},
+	"console":
+	{
+		"height": 326.0,
+		"history":
+		[
+			" import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/interfaces",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/myreader"
+	],
+	"file_history":
+	[
+		"/home/mwcruz/GOLANG/GoCode/src/golang.org/x/tour/solutions/rot13.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/myreader/rot13.go",
+		"/home/mwcruz/linscripts/.test.sh",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/myreader/myreader.go",
+		"/home/mwcruz/GOLANG/GoCode/src/golang.org/x/tour/reader/validate.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/goerrors/goerrors.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/reader/myreader.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/methods/methods_with_pointer_receivers.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/stringer/stringer_ipaddress.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/interfaces/interface_value.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/type_assertion/type_assertion.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/type_assertion/type_switch.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/stringer/stringer.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/methods/gomethods.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/interfaces/interfaces.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/fibonacci2/fibonacci2.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/fibonacci/fibonacci.go",
+		"/home/mwcruz/GOLANG/GoCode/src/github.com/mwcruz/golang-apps/gotour.sublime-project",
+		"/home/mwcruz/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/mwcruz/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/mwcruz/.config/sublime-text-3/Packages/User/golang.sublime-settings",
+		"/home/mwcruz/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.golang_build":
+	{
+		"height": 358.0
+	},
+	"pinned_build_system": "Packages/Golang Build/Go.sublime-build",
+	"project": "gotour.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

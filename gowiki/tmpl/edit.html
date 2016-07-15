@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<title>{{.Title}}</title>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+<h1>Editing {{.Title}}</h1>
+</header>
+
+<form role="form" action="/save/{{.Title}}" method="POST">
+  
+    <div><textarea name="body" class="form-control" rows=15>{{printf "%s" .Body}}</textarea>
+    </div>
+    <div><input type="submit" class="btn btn-primary" value="Save"></div>
+
+</form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+This is a collection of exercises in Engineering Software as a Service, Analytics Edge, Machine Learning Algorithms, Business Model Development for mobile broadband operators, resulting from development and implementations while learning the craft of software engineering and machine learning engineer, and business analyst.
+
+Feel free to use, collaborate by modifying and  extending, innovate, and more importantly share with others if you find something useful.
+

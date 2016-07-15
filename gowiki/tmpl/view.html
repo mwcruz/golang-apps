@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<title>{{.Title}}</title>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">MWBMC</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agile Software Development <span class="caret"><span class="sr-only">(current)</span></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Botanotas</a></li>
+            <li><a href="#">Hangmangame</a></li>
+            <li><a href="#">Nutritarintel</a></li>
+            <li><a href="#">Rottenpotatos</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">   </a></li>
+          </ul>
+        </li>
+	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Linear Regression</a></li>
+            <li><a href="#">Classification</a></li>
+            <li><a href="#">Clustering and Retrieval</a></li>
+	    <li><a href="#">Deep Learning</a></li>
+          </ul>
+        </li>
+	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Business Development <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Mobile Broadband Business Model</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">SaaS Business Model</a></li>
+          </ul>
+        </li>
+	
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Login</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+<h1>{{.Title}}</h1>
+
+<p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+
+<div>{{printf "%s" .Body}}</div>
+</div>
+
+</body>
+</html>
